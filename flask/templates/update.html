@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="zh-Hant-TW"> 
+
+    <head>  
+    
+        <meta charset="utf-8"> 
+        <title>公告更新</title> 
+
+</head>
+<body>>
+
+    <H2 style="Text-Align: Center;">
+        公告更新 
+    </H2>
+
+    <Form action="/update/{{ task.id }}" method="POST" Align="Center">
+        
+        <Label For="title">公告事項</Label><Br>
+        <Input Type="Text" Name="title" id="title" Value="{{ task.title }}"><Br><Br>
+
+        <Label For="content">公告說明</Label><Br>
+        <Input Type="Text" Name="content" id="content" Value="{{ task.content }}"><Br><Br>
+
+        <Label For="people">公告人</Label><Br>
+        <Input Type="Text" Name="people" id="people" Value="{{ task.people }}"><Br><Br>
+
+        <Input Type="Submit" Value="確認">
+
+
+    </Form>
+
+</body>
+</html>>
